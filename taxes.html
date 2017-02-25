@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TaskID1 | subOne</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+  		p1 {
+			font-style: italic;
+			font-size: 20px;
+			}
+  </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <h1>
+			<a href="index.html">Doc2Do</a><p1>    A personal task manager</p1>
+			<hr></hr>
+        </h1>
+      </header>
+
+      <h2>ID: 3</h2>
+
+      <form class="form-horizontal" action="index.html" method="GET">
+        <div class="form-group">
+          <label for="iName" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="new_name" placeholder="Taxes">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="iDesc" class="col-sm-2 control-label">Description</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" rows="10" id="new_description" placeholder="Do my taxes"></textarea>
+          </div>
+        </div>
+		
+		 <div class="form-group">
+          <label for="iLOE" class="col-sm-2 control-label">Level of Effort</label>
+		  <div class="col-sm-10">
+			<input type="radio" id="new_loe" value="easy"> Easy<br>
+			<input type="radio" id="new_loe" value="medium"> Medium<br>
+			<input type="radio" id="new_loe" value="hard" checked> Hard
+		  </div>
+         </div>
+		 
+		 <div class="form-group">
+          <label for="iPriority" class="col-sm-2 control-label">Priority</label>
+		  <div class="col-sm-10">
+			<input type="radio" id="new_priority" value="first" checked> 1 <br>
+			<input type="radio" id="new_priority" value="second"> 2 <br>
+			<input type="radio" id="new_priority" value="third"> 3
+		  </div>
+         </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" value="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <hr>
+      <footer>
+        <p>
+          <a href="https://lberglund.github.io/personal website/">view</a> |
+          <a href="https://github.com/prof-rossetti/crud-app-beginnings">source</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

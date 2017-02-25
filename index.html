@@ -1,26 +1,122 @@
- <!DOCTYPE html> 
- <html> 
-   <head> 
-     <meta charset="utf-8"> 
-     <title>Finance Manager | A website by me</title> 
-   </head> 
-   <body> 
-     <h1>Finance Manager</h1> 
-   <table style="width:100%"> 
-   <tr> 
-     <th>ID</th> 
-     <th>Name</th>  
-     <th>Description</th> 
-     <th>Created At</th> 
-     <th>Updated At</th> 
-   </tr> 
-   <tr> 
-     <td>IMPORT</td> 
-     <td><a href="import.html"> c3po</a></td> 
-     <td>IMPORT</td> 
-     <td>9:47 P.M</td> 
-     <td>now</td> 
-   </tr> 
- </table> 
-   </body> 
-2</html> 
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type="text/javascript" src="table_script.js"></script>
+    <meta charset="utf-8">
+    <title>Task Manager | Luke Berglund</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+			table {
+			counter-reset: rowNumber;
+			}
+		table tr {
+			counter-increment: rowNumber;
+			}
+		table tr td:first-child::before {
+			content: counter(rowNumber);
+			mid-width: lem;
+			margin-right: 0.5em;
+			}
+
+		p1 {
+			font-style: italic;
+			font-size: 20px;
+			}
+	</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+			<a href="index.html">Doc2Do</a><p1>    A personal task manager</p1>
+			<hr></hr>
+        </h1><br>
+	    <h3>
+			<nav>
+			 <ul>
+				<li> <a href= "opentasks.html">Open Tasks</li>
+				<li> <a href= "reviewTasks.html">Review Tasks</li>
+				<li> <a href= "ClosedTasks.html">Closed Tasks</li>
+			</ul>
+			</nav>
+		</h3>
+        <button type="button" class="add" onclick="add_row();" style="margin-left: 0.5em; margin-top: 0.7em;">Refresh</button>
+        <a class="btn btn-primary pull-right" href="newTask.html" role="button" style="margin-left: 0.5em; margin-top: 0.7em;">New Task</a>
+	  </header><br><br><br>
+	  
+	  
+	  
+	  
+	<div id="wrapper">
+		<table align='center' class="table table-bordered table-hover"  id="data_table">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Descripion</th>
+			<th>Level of Effort</th>
+			<th>Priority</th>
+			<th>Status</th>
+		</tr>
+		
+		<tr id="row1">
+		<td id="id_row1"></td>
+		<td><a id="name_row1" href="personal_website.html">CSC 443 Personal Website</td>
+		<td id="Description_row1">Complete CSC 443 Personal Website assignment. Submit through github.</td>
+		<td id="LevelofEffort_row1" align="center">Medium</td>
+		<td id="Priority_row1" align="center">1</td>
+		<td>
+		<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+		<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+		<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+		</td>
+		</tr>
+
+		<tr id="row2">
+		<td id="id_row2"></td>
+		<td><a id="name_row2" href="taxes.html">Taxes</td>
+		<td id="Description_row2">Do my taxes</td>
+		<td id="LevelofEffort_row2" align="center">High</td>
+		<td id="Priority_row2" align="center">1</td>
+		<td>
+		<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('2')">
+		<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('2')">
+		<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+		</td>
+		</tr>
+
+		<tr id="row3">
+		<td id="id_row3"></td>
+		<td><a id="name_row3" href="csc_project.html">CSC 400 project</td>
+		<td id="Description_row3">Work on CSC 400 project. Begin to setup database relationships and submit by Friday.</td>
+		<td id="LevelofEffort_row3" align="center">Medium</td>
+		<td id="Priority_row3" align="center">2</td>
+		<td>
+		<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('3')">
+		<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('3')">
+		<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+		</td>
+		</tr>
+
+		<tr>
+		<td></td>
+		<td><input type="text" id="new_name"></td>
+		<td><input type="text" id="new_description"></td>
+		<td><input type="text" id="new_loe"></td>
+		<td><input type="text" id="new_priority"></td>
+		<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+		</tr>
+
+	   </table>
+	</div>
+
+
+      <hr>
+      <footer>
+        <p>
+          <a href="https://prof-rossetti.github.io/crud-app-beginnings/">view</a> |
+          <a href="https://github.com/prof-rossetti/crud-app-beginnings">source</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
