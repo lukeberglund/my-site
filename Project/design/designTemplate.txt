@@ -1,1 +1,1 @@
-
+I took on the design phase by utilizing Microsoft Access to create template interfaces. By doing so, I was able to create a layed out template of how I wanted the site to look. This saved me time as I already knew where improvements could possibly be made before I even began creating the website structure.  
