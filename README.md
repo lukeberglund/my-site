@@ -1,2 +1,2 @@
 # Personal Task Manager
-This website is designed to manage your tasks. This site was created to help to accomplish ones tasks in an efficient and succesful manner.
+This website is designed to manage your tasks. It was created to aid in accomplishing ones tasks in an efficient environment.
